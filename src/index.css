@@ -1,0 +1,50 @@
+:root {
+  /* Color */
+  --bg: #F6F1E7;
+  --surface: #FFFFFF;
+  --ink: #1C1A17;
+  --ink-soft: rgba(28, 26, 23, 0.62);
+  --line: rgba(28, 26, 23, 0.13);
+  --accent: #E39A2D;      /* amber - warmth, comfort */
+  --accent-ink: #5B3A0E;
+  --sage: #93A480;        /* sage - freshness, ease */
+  --danger: #C4522E;
+
+  /* Type */
+  --display: 'Fraunces', Georgia, serif;
+  --body: 'Inter', system-ui, sans-serif;
+  --mono: 'Space Mono', monospace;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root { margin: 0; min-height: 100%; }
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--body);
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+
+button { font-family: inherit; }
+
+.mono {
+  font-family: var(--mono);
+  letter-spacing: 0.02em;
+}
+
+a { color: inherit; }
+
+::selection { background: var(--accent); color: var(--surface); }
+
+:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+}

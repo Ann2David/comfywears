@@ -1,0 +1,27 @@
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 60px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  text-align: center;
+}
+
+.stat-value {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 44px;
+  color: var(--accent-ink);
+}
+
+.stat-label {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+  margin-top: 6px;
+}
+
+@media (max-width: 700px) {
+  .stats { grid-template-columns: 1fr; gap: 32px; }
+}

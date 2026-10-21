@@ -1,0 +1,30 @@
+.press-bar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 40px 70px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  text-align: center;
+}
+
+.press-item p {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 17px;
+  line-height: 1.5;
+  color: var(--ink);
+  margin: 0 0 14px;
+}
+
+.press-pub {
+  font-family: var(--display);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  font-size: 15px;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 780px) {
+  .press-bar { grid-template-columns: 1fr; padding: 30px 24px 40px; }
+}
